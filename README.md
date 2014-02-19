@@ -50,10 +50,10 @@ Pong Control Module:
 Up, down  and faster were inputs from the video module that were linked to physical inputs via the UCF file. V_completed signaled the completion of one screen on the monitor and was used as the basic clock for all control logic. The biggest issue I had in this module was a very scattered approach. I ended up using 10 states in the actual game logic. In reality, I probably only needed about 6 (i used have split the logic into movement, current state, and direction). 
     
   
-    Testing and debugging:
+    Testing and debugging
     
     changes were not commited to GIT due to an inability to use the lab computer on the site. The biggest probems overall were in the control module due to a poor approach. next time i will do a lot more initial planning and maintain an open mind to scrapping code that is inefficient or incorrect. 
     
-    Conclusion:
+    Conclusion
     
     Modularity is very helpful (achieved B functionality in just two tries due to the modular nature of my code) in that it makes adding functionality, troubleshooting, and code readability much easier than in a more generalized approach. 
