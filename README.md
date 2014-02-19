@@ -33,20 +33,21 @@ logo logic.
 
 
 Pong Control Module: 
-    entity pong_control is
-        Port ( clk : in  STD_LOGIC;
-               reset : in  STD_LOGIC;
-               up : in  STD_LOGIC;
-               down : in  STD_LOGIC;
-    			     faster : in std_logic; 
-               v_completed : in  STD_LOGIC;
-               ball_x : out  unsigned (10 downto 0);
-               ball_y : out  unsigned (10 downto 0);
-               paddle_y : out  unsigned (10 downto 0)
-    			  );
-    end pong_control;
+	
+    	entity pong_control is
+	   Port ( clk : in  STD_LOGIC;
+	         reset : in  STD_LOGIC;
+		 up : in  STD_LOGIC;
+        	 down : in  STD_LOGIC;
+    		 faster : in std_logic; 
+        	  v_completed : in  STD_LOGIC;
+        	  ball_x : out  unsigned (10 downto 0);
+        	  ball_y : out  unsigned (10 downto 0);
+        	  paddle_y : out  unsigned (10 downto 0)
+    				  );
+	  end pong_control;
     
-Up/down/faster were inputs from the video module that were linked to physical inputs via the UCF file. V_completed signaled the completion of one screen on the monitor and was used as the basic clock for all control logic. The biggest issue I had in this module was a very scattered approach. I ended up using 10 states in the actual game logic. In reality, I probably only needed about 6 (i used have split the logic into movement, current state, and direction). 
+Up, down  and faster were inputs from the video module that were linked to physical inputs via the UCF file. V_completed signaled the completion of one screen on the monitor and was used as the basic clock for all control logic. The biggest issue I had in this module was a very scattered approach. I ended up using 10 states in the actual game logic. In reality, I probably only needed about 6 (i used have split the logic into movement, current state, and direction). 
     
   
     Testing/debugging:
