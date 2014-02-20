@@ -1,6 +1,8 @@
 383_Pong
 ========
 
+Link to code: https://github.com/donfitch1354/lab_1/tree/master/lab_2
+
 FPGA VHDL code for a simple game
 
 
